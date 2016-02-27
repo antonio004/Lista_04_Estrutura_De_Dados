@@ -1,13 +1,13 @@
 import javax.swing.JOptionPane;
 
-public class Questao_02 {
+public class Questao_2 {
 
     public static void main(String[] args) {
 
         double vet[] = new double[16];
         double auxiliar;
 
-        //Laço para ler os 12 valores a serem armazenados no vetor.
+        //Laço para ler os 16 valores a serem armazenados no vetor.
         for (int i = 0; i < vet.length; i++) {
             vet[i] = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe o numero a ser salva na posição " + (i) + " do vetor: "));
         }

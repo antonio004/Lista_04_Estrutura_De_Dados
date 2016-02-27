@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Questao_01 {
+public class Questao_1 {
 
     public static void main(String[] args) {
 
