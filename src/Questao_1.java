@@ -1,3 +1,4 @@
+
 import javax.swing.JOptionPane;
 
 public class Questao_1 {
@@ -8,8 +9,14 @@ public class Questao_1 {
         int Valor_P1 = 0, Valor_P2 = 0;
 
         //Laço para ler os 12 valores a serem armazenados no vetor.
-        for (int i = 0; i < vet.length; i++) {
-            vet[i] = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe o numero a ser salva na posição " + (i) + " do vetor: "));
+        try { //Verifica a o que foi digitado, e caso nao seja um double, encerra a execução.
+            for (int i = 0; i < vet.length; i++) {
+                vet[i] = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe o numero a ser salva na posição " + (i) + " do vetor: "));
+            }
+        } catch (NumberFormatException e) {
+            //e.getMessage(), retorna o que foi digitado informando o tipo de dado introduzido.
+            JOptionPane.showMessageDialog(null, e.getMessage() + "\nExecução Finalizada.");
+            System.exit(0);
         }
 
         //Pede a posição(inteiro)  do vetor para fazer a soma, e exibe o erro caso a posição nao seja um inteiro.
@@ -19,6 +26,7 @@ public class Questao_1 {
                 Valor_P1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe a posição do numero a ser somado (posição entre 0 e 11): "));
             } while (Valor_P1 < 0 || Valor_P1 > 11);
         } catch (NumberFormatException e) {
+            //e.getMessage(), retorna o que foi digitado informando o tipo de dado introduzido.
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
 
@@ -29,6 +37,7 @@ public class Questao_1 {
                 Valor_P2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe a posição do valor digitado(posição entre 0 e 11): "));
             } while (Valor_P2 < 0 || Valor_P2 > 11);
         } catch (NumberFormatException e) {
+            //e.getMessage(), retorna o que foi digitado informando o tipo de dado introduzido.
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
 

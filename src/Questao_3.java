@@ -16,9 +16,9 @@ public class Questao_3 {
             vet[i] = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe o numero a ser salva na posição " + (i) + " do vetor: "));
         } 
         
-        // Laçõ que imprime os números informados e a posição em que cada um foi armazenado.
+        // Laço que imprime os números informados e a posição em que cada um foi armazenado.
         for (int i=0; i<vet.length;i++){
-            System.out.println("Posição"+vet[i]);
+            System.out.println("Posição "+(i)+": "+vet[i]);
         }
         
         //A variável x armazenado o numero que será consultado.
