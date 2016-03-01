@@ -5,8 +5,8 @@ import javax.swing.JOptionPane;
 public class Questao_16 {
 
     public static void main(String[] args) {
-        char[][] matriz_1 = new char[2][2];
-        char[][] matriz_2 = new char[2][2];
+        char[][] matriz_1 = new char[4][4];
+        char[][] matriz_2 = new char[4][4];
         int flag1 = 1, flag2 = 1;
 
         Scanner entrada = new Scanner(System.in);
