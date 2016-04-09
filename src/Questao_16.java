@@ -1,4 +1,4 @@
-
+﻿
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
@@ -14,7 +14,7 @@ public class Questao_16 {
         //Tenta criar a matriz_1, verificano se o tipo de entrada será um inteiro.
         try {
             //Cria Linhas da Matriz
-            System.out.println("------------------------ Preenche Matriz 1 ------------------------");
+            System.out.println("--------------------- Preenche Matriz 1 ------------------------");
             for (int i = 0; i < matriz_1.length; i++) {
                 //Cria Colunas da Matriz
                 for (int j = 0; j < matriz_1.length; j++) {
